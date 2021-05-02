@@ -1,0 +1,42 @@
+.EducationTable {
+    width: 70vw;
+    height: 60vh;
+    margin: 20vh;
+}
+
+ul {
+    margin: 0;
+}
+
+#university, #highschool {
+    color: white;
+    text-align: right;
+    margin-top: 0;
+    margin-left: 10vh;
+    margin-bottom: 0;
+}
+
+.educationRow {
+    height: 30vh;
+    margin: 0;
+}
+
+#educationColTitle {
+    width: 20vw;
+    background-color: #ff6b6b;
+    height: inherit;
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: 0;
+}
+
+.educationText {
+    align-items: center;
+    color: white;
+    width: 50vw;
+    height: 30vh;
+    background-color: #ff6b6b;
+    display: inline-flex;
+    flex-direction: row;
+}
+
