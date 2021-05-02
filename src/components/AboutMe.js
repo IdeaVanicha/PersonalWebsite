@@ -4,6 +4,7 @@ import friends from "./drawings/friends.png";
 import firstFact from "./drawings/firstFact.png";
 import Sunflower from "./drawings/sunflower.jpg";
 import guitar from "./drawings/guitar.png";
+import resume from "../IdeaResume.pdf";
 
 const AboutMe = ( aboutmeElem ) => {
     
@@ -48,7 +49,12 @@ const AboutMe = ( aboutmeElem ) => {
             <link rel="stylesheet" href="AboutMe.css"/>
             <div class="AboutMePage">
                 <p id="AMTitle">A B O U T_M E</p>
-                <p id ="email">Email: ideavanicha@gmail.com | LinkedIn: Phasavee Vanicharoenchai | RESUME</p>
+                <p id ="email">
+                    Email: ideavanicha@gmail.com | 
+                    <a href="https://www.linkedin.com/in/phasavee-idea-vanicharoenchai-b40a5b1a4/"> LinkedIn: <span style = {{ color: "#ff6b6b", textDecoration: "underline"}}> Phasavee Vanicharoenchai</span> </a> 
+                    | <a href={resume} download style = {{ color: "#ff6b6b", textDecoration: "underline"}}> Resume Click Here </a>
+                </p>
+
                 <div class="Information">
                     <div class="MyInfo" id="fact"> 
                         <div class="facts" id="firstfact" style={ { display:"flex", backgroundColor: "white"}}>

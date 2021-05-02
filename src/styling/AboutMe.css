@@ -111,3 +111,8 @@ h1 {
 #backButton:hover {
     cursor: pointer;
 }
+
+a {
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+}
