@@ -1,51 +1,80 @@
 import React from 'react';
-import '../styling/Education.css'
+import '../styling/Education.css';
+import  placeholder  from './placeholder.jpeg'
+import  education  from './education.png'
+import unilodge from './unilodge.png'
+import ar from './ar.jpeg'
+import kis from './kis.png'
+import usyd from './usyd.png'
 
-const Education = () => {
 
-    return (
-        <div class="Education">
-            <style href="Education.css"></style>
-            <div class="EducationTable">
+export default function Education() {
 
-                <div class="educationRow">
-                    <div id="educationColTitle" class="educationCol">
-                        <h1 id="highschool">HighSchool</h1>
-                    </div>
-                    <div class="educationText" id="highschoolText">
-                        <ul>
-                            <li>KIS International School</li>
-                            <li>international baccalaureate, Awarded 40 IB points equivalent to 98.05 ATAR</li>
-                            <li>Extracirriculars: House Captain, Service Club Advisor, Football, Basketball</li>
-                            <li>Outstanding Achivements: Sally Hollaway IB Learner Profile, KIS Book Scholarship</li>
-                        </ul>
-                    </div>
+    const displayEducation = () => {
+        document.querySelector("#work-main").style.display = "none";
+        document.querySelector("#education-main").style.display = "flex";
+    }
 
-                </div>
 
-                <div class="educationRow">
-                    <div id="educationColTitle" class="educationCol">
-                        <h1 id="university">University</h1>
-                    </div>
-                        <div class="educationText" id="highschoolText">
-                        <ul>
-                            <li>University of Sydney: 2020 - 2024</li>
-                            <li>Bachelor of Advanced Computing and Bachelor of Commerce</li>
-                            <li>Majors: Computational Data Science and Finance</li>
-                            <li>Scholarship: Engineering Leadership Scholarship</li>
-                            <li>WAM: Distinction</li>
-                        </ul>
-                    </div>
+    const displayWork = () => {
+        document.querySelector("#work-main").style.display = "flex";
+        document.querySelector("#education-main").style.display = "none";
+    }
+
+    return(
+        <div id="overall-container">
+            <div id="side">
+                <div class="work-experience">
+                    <div class="title" onClick={displayWork}>Work Experience</div>
 
                 </div>
+                <div class="education-container">
+                    <div class="title" onClick={displayEducation}>Education</div>
 
+                    {/* <div id="education-title">Education</div>
+                    <div>My education journey</div>
+                    <div>
+                        <img src={education} id="education-photo"/>
+                    </div> */}
+                </div>
+            </div>
+        <div id="main1">
+            <div id="work-main">
+                <div id="work"> 
+                    <img src={unilodge} id="work-img" />
+                    <div id="work-des">
+                    <div id="title-box"><p id="work-title">Residential Assistant</p><br/>Jan.21 - Jul.21</div>
+                    <div id="des-box"><p>Plan, host and promote events in student accomodation to enrich student life and uplift community spirit </p></div></div>
+                </div>
+                <div id="work"> 
+                    <img src={ar} id="work-img"/>
+                    <div id="work-des">
+                        <div id="title-box"><p id="work-title">Data Administrator</p><br/>Aug.21 - Current</div>
+                        <div id="des-box"><p>Collect and clean data. Assist with some basic HTML/CSS for marketing campaigns.</p></div>
+                    </div>
+                </div>
+            </div>
 
+            <div id="education-main">
+            <div id="work"> 
+                    <img src={kis} id="kis-img" />
+                    <div id="work-des">
+                    <div id="title-box"><p id="work-title">KIS International School</p></div>
+                    <div id="des-box">IB Score: 40 points, 98.05 ATAR Equivalent</div></div>
+                </div>
+                <div id="work"> 
+                    <img src={usyd} id="work-img"/>
+                    <div id="work-des">
+                    <div id="title-box"><p id="work-title">University of Sydney</p></div>
+                    <div id="des-box">B. of Advanced Computing & B.Commerce <br/>( 2020 - 2024 )</div></div>
+                </div>
             </div>
 
         </div>
 
-    )
-    
-};
 
-export default Education;
+
+        </div>
+        
+    )
+}

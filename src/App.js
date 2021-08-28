@@ -1,22 +1,21 @@
 import './App.css';
-import HomePage from './components/HomePage';
-import Experience from './components/Projects';
+import NavigationBar from './components/NavigationBar';
+import Home from './components/Home';
 import Education from './components/Education';
-import { BrowserRouter as Router, Route, Link, BrowserRouter } from "react-router-dom";
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Footer from './components/Footer';
+import AboutMe from './components/AboutMe';
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap" rel="stylesheet"/>
-      </header>
-
-      <body>
-        <HomePage></HomePage>
-        <Experience></Experience>
-      </body>
+      <NavigationBar/>
+      <Home/>
+      <AboutMe/>
+      <Education />
+      <Projects />
+      <Footer />
     </div>
   );
 }

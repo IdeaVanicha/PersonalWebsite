@@ -1,113 +1,75 @@
-import React from 'react';
-import '../styling/Experience.css'
-import Consulting from './Consulting.js';
-import bamboo from "./drawings/bamboo.png";
-import scoreboard from "./drawings/scoreboard.png";
+import React, {useState} from 'react';
+import '../styling/Projects.css';
+import  placeholder  from './placeholder.jpeg'
+import bamboo  from './bamboo.png'
+import personal  from './personal.png'
+import pouch  from './pouch.png'
 
 
-const Experience = () => {
+import { AiFillGithub, AiOutlineTool} from "react-icons/ai";
 
-    let firstClick = false;
-
-    function display( description ) {
-
-        if (!firstClick){
-
-            if(description.target.id == "bambooButton"){
-                document.querySelector(".bambooDes").style.display = "flex";
-                document.getElementById("bimg").style.display = "none";
-                document.getElementById("bambooButton").innerHTML = "CLOSE";
-
-            } else if (description.target.id == "scoreboardButton"){
-                document.querySelector(".scoreboardDes").style.display = "flex";
-                document.getElementById("sbimg").style.display = "none";
-                document.getElementById("scoreboardButton").innerHTML = "CLOSE";
-            }
-
-            firstClick = true;
-
-        } else { 
-
-            if(description.target.id == "bambooButton"){
-                document.querySelector(".bambooDes").style.display = "none";
-                document.getElementById("bimg").style.display = "flex";
-                document.getElementById("bambooButton").innerHTML = "DESCRIPTION";
-            } else if (description.target.id == "scoreboardButton"){
-                document.querySelector(".scoreboardDes").style.display = "none";
-                document.getElementById("sbimg").style.display = "flex";
-                document.getElementById("scoreboardButton").innerHTML = "DESCRIPTION";
-            }
-           
-            firstClick = false;
-        }
-    }
-
-
-
-    return (
-        <div>
-            <p class="expStick" id="exp">E X P E R I E N C E S</p>
-            <div class="Experience">
-            <style href="Experience.css"></style>
-            <div class="PjTable">
-                <div id="PjTitleColumn">
-                    <p id="ProjectTitle"> P</p>
-                    <p id="ProjectTitle"> R</p>
-                    <p id="ProjectTitle"> O</p>
-                    <p id="ProjectTitle"> J</p>
-                    <p id="ProjectTitle"> E</p>
-                    <p id="ProjectTitle"> C</p>
-                    <p id="ProjectTitle"> T</p>
-                    <p id="ProjectTitle"> S</p>
-                </div>
-                <div id="PjColumn">
-                    <div id="project 1" class="box">
-                        <table>
-                            <div>
-                                <tr id="bimg"><img id="bambooImg" src={bamboo}></img></tr>
-                                <tr class="bambooDes" id="bambooDes">
-                                    <p>The theme of 2021 Hackiethon was "Working from Home". My team and I designed 
-                                    <span><a id="bambooLink" href="https://devpost.com/software/bamboo-bzutwq?ref_content=user-portfolio&ref_feature=in_progress"> Bamboo </a></span> 
-                                    which is productivity application where users can make their own to-do list, earn points upon completing tasks, add friends, view their friends 
-                                    tasks and send challenges to their friends. I was involved in building the user authentication system, connecting our application 
-                                    to the backend and handled some css and javascript.</p>
-                                </tr>
-                            </div>
-
-                            <tr id="projectDes">
-                                <button class="projectButtons"><a href="https://github.com/IdeaVanicha/hackiethon-2021">GITHUB</a></button>
-                                <button class="projectButtons" id="bambooButton" onClick={ display }>DESCRIPTION</button>
-                            </tr>
-
-                        </table>
-                    </div>
-
-                    <div class="box">
-                        <table>
-                            <div>
-                                <tr id="sbimg" ><img id="bambooImg"  src={scoreboard}/></tr>
-                                <tr class="scoreboardDes">
-                                <p> This is the first small project I've ever coded using javascript, css, and html. I started learning JS, CSS, and HTML by 
-                                    myself during winter break. This is nothing big, but a first step to my self-taught journey :).
-                                </p>
-                                </tr>
-                            </div>
-
-                            <tr id="projectDes">
-                                <button class="projectButtons"><a href="https://github.com/IdeaVanicha/Scoreboard">GITHUB</a></button>
-                                <button class="projectButtons" id="scoreboardButton" onClick={ display }>DESCRIPTION</button>
-                            </tr>
-                        </table>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <Consulting></Consulting>
-        </div>
- 
-    )
+export default function Projects() {
     
-};
+    return(
+        <div id="projects-container">
+            <div id="header-project">
+                <h1>Projects</h1>
+            </div>
+            <div id="slider-project">
+                <div id="box">
+                    <div id="top">
+                        <img id="prjImg" src={bamboo}></img>
+                    </div>
+                    <div id="bottom">
+                        <div id="prj-title">Bamboo</div>
+                        <div id="prj-caption">Hackiethon 2021 | JS, HTML, CSS, React</div>
+                        <div id="prj-des"> A productivity tracker to make to-do list, earn points upon completing tasks, add friends, view friends 
+                    tasks and send challenges</div>
+                    <div id="git-button">
+                    <a href="https://github.com/IdeaVanicha/hackiethon-2021" >
+                        <p id="button-txt">Git Hub</p>
+                    </a>
+                    <AiFillGithub size={20} color="white"/>
 
-export default Experience;
+                    </div>
+                    </div>
+                </div>
+
+                <div id="box">
+                    <div id="top">
+                        <img id="prjImg" src={personal}></img>
+                    </div>
+                    <div id="bottom">
+                        <div id="prj-title">Personal Website</div>
+                        <div id="prj-caption">Aug 2021 | JS, HTML, CSS, React</div>
+                        <div id="prj-des">Made this website using React, HTML, CSS and Javascript</div>
+                    <div id="git-button">
+                    <a href="https://github.com/IdeaVanicha/hackiethon-2021" >
+                        <p id="button-txt">Git Hub</p>
+                    </a>
+                    <AiFillGithub size={20} color="white"/>
+
+                    </div>
+                    </div>
+                </div>
+
+                <div id="box">
+                    <div id="top">
+                        <img id="prjImg" src={pouch}></img>
+                    </div>
+                    <div id="bottom">
+                        <div id="prj-title">Pouch Loyalty</div>
+                        <div id="prj-caption">Ongoing Product | JS, HTML, CSS, React Native</div>
+                        <div id="prj-des">Current project. Mobile Application made using React Native.</div>
+                    <div id="git-button">
+                    <p id="button-txt">Ongoing</p>
+                    <AiOutlineTool size={20} color="white"/>
+                    </div>
+                    </div>
+                </div>
+ 
+            </div>
+
+        </div>
+    )
+}
