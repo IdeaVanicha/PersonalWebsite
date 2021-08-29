@@ -6,6 +6,7 @@ import unilodge from './unilodge.png'
 import ar from './ar.jpeg'
 import kis from './kis.png'
 import usyd from './usyd.png'
+import { HiOutlineCursorClick } from "react-icons/hi";
 
 
 export default function Education() {
@@ -29,13 +30,9 @@ export default function Education() {
 
                 </div>
                 <div class="education-container">
-                    <div class="title" onClick={displayEducation}>Education</div>
-
-                    {/* <div id="education-title">Education</div>
-                    <div>My education journey</div>
-                    <div>
-                        <img src={education} id="education-photo"/>
-                    </div> */}
+                    <div class="title" onClick={displayEducation}>Education
+                    <HiOutlineCursorClick  size={30} color="#FBC5B8"/></div>
+                    
                 </div>
             </div>
         <div id="main1">

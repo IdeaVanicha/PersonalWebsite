@@ -44,7 +44,7 @@ export default function Projects() {
                         <div id="prj-caption">Aug 2021 | JS, HTML, CSS, React</div>
                         <div id="prj-des">Made this website using React, HTML, CSS and Javascript</div>
                     <div id="git-button">
-                    <a href="https://github.com/IdeaVanicha/hackiethon-2021" >
+                    <a href="https://github.com/IdeaVanicha/PersonalWebsite" >
                         <p id="button-txt">Git Hub</p>
                     </a>
                     <AiFillGithub size={20} color="white"/>
