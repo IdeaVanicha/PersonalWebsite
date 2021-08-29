@@ -36,7 +36,7 @@ export default function Education() {
                     
                 </div>
             </div>
-        <div id="main1">
+        <div id="main">
             <div id="work-main">
                 <div id="work"> 
                     <img src={unilodge} id="work-img" />

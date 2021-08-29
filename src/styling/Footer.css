@@ -1,10 +1,11 @@
 #footer-container {
-  height: 20vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: #ed755a;
   flex-direction: column;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .socials {

@@ -58,3 +58,14 @@
 #prom-photo {
   height: 300px;
 }
+@media screen and (max-width: 800px) {
+  #about-container {
+    flex-direction: column;
+    height: 100vh;
+  }
+  #paragraph {
+    height: 100%;
+    width: 90%;
+    margin-top: 10px;
+  }
+}

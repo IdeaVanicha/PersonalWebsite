@@ -1,7 +1,6 @@
 .navbar-container {
   height: 70px;
   width: 100vw;
-  /* border: solid 1px black; */
   background-color: white;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   display: flex;
@@ -49,4 +48,55 @@
 
 .links:active {
   color: pink;
+}
+
+.menu {
+  display: none;
+}
+
+.drop-down {
+  flex-direction: column;
+  height: 40vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: none;
+  border-radius: 10px;
+  background-color: white;
+  animation-duration: 1s;
+  animation-name: slide-down;
+  animation-fill-mode: forwards;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.drop {
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-bottom: 0.5px solid #fbc5b877;
+}
+
+@keyframes slide-down {
+  from {
+    margin-top: -50%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-container {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    height: 5vh;
+    width: 97vw;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
 }
