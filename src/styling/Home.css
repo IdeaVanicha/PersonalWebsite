@@ -15,7 +15,6 @@ p {
 .socialmedia-container {
   height: 30%;
   width: 5%;
-  opacity: 0%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
