@@ -42,6 +42,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .title:hover {
