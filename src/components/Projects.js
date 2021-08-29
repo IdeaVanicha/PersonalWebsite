@@ -4,6 +4,7 @@ import  placeholder  from './placeholder.jpeg'
 import bamboo  from './bamboo.png'
 import personal  from './personal.png'
 import pouch  from './pouch.png'
+import { HiOutlineCursorClick } from "react-icons/hi";
 
 
 import { AiFillGithub, AiOutlineTool} from "react-icons/ai";
@@ -21,7 +22,7 @@ export default function Projects() {
                         <img id="prjImg" src={bamboo}></img>
                     </div>
                     <div id="bottom">
-                        <div id="prj-title">Bamboo</div>
+                        <a id="prj-title" href="https://devpost.com/software/bamboo-bzutwq?ref_content=user-portfolio&ref_feature=in_progress">Bamboo <HiOutlineCursorClick  size={20} color="#FBC5B8"/></a>
                         <div id="prj-caption">Hackiethon 2021 | JS, HTML, CSS, React</div>
                         <div id="prj-des"> A productivity tracker to make to-do list, earn points upon completing tasks, add friends, view friends 
                     tasks and send challenges</div>
@@ -32,6 +33,7 @@ export default function Projects() {
                     <AiFillGithub size={20} color="white"/>
 
                     </div>
+
                     </div>
                 </div>
 

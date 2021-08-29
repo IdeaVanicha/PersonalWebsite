@@ -31,7 +31,8 @@ export default function Education() {
                 </div>
                 <div class="education-container">
                     <div class="title" onClick={displayEducation}>Education
-                    <HiOutlineCursorClick  size={30} color="#FBC5B8"/></div>
+                    <HiOutlineCursorClick  size={30} color="#FBC5B8"/>
+                </div>
                     
                 </div>
             </div>
