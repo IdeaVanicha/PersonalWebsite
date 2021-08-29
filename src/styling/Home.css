@@ -21,10 +21,6 @@ p {
   background-color: white;
   /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
   border-radius: 10px;
-  animation-duration: 2s;
-  animation-name: fade-in;
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
 }
 
 .social-media {
