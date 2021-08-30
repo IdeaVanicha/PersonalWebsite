@@ -3,13 +3,6 @@ import '../styling/Navigation.css';
 import {Link} from 'react-scroll';
 import { AiOutlineMenu, AiFillCloseCircle } from "react-icons/ai";
 
-function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height
-    };
-  }
 
 export default function NavigationBar() {
 
@@ -25,6 +18,14 @@ export default function NavigationBar() {
             setCollasped(true)
         }
     }
+
+    window.addEventListener('resize', (event) => {
+
+        if (window.innerWidth >= 800){
+            document.querySelector(".drop-down").style.display = "none";
+            setCollasped(true)
+        }
+      });
 
     return(
         <div class="container">
