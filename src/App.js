@@ -1,23 +1,38 @@
-import './App.css';
 import NavigationBar from './components/NavigationBar';
 import Home from './components/Home';
-import Education from './components/Education';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
+import { IndividualProject } from './components/Projects';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <NavigationBar/>
-      <Home/>
-      <AboutMe/>
-      <Education />
-      <Projects />
+      <Routes>
+        <Route exact path="/" element={<Main />} />
+        <Route exact path='/IndividualProject' element={<IndividualProject/>}/>
+      </Routes>
       <Footer />
-    </div>
+
+  </Router>
   );
 }
 
 export default App;
+
+function Main() {
+  return <div className="App">
+      <Home/>
+      <AboutMe/>
+      <Experience />
+      <Projects />
+  </div>
+}
