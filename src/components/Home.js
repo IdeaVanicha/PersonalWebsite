@@ -35,7 +35,6 @@ export default function Home() {
                 <p id="intro-des">Full time data science and finance student at USYD. Part time innovating ideas and pretty design using code as a medium.</p>
                 <a id="contact-button"  href="mailto:ideavanicha@gmail.com">
                     <AiOutlineMail size={20} color="white"/>
-                    <p id='button-txt'>Send Email</p>
                 </a>
             </div>
 
@@ -51,6 +50,17 @@ export default function Home() {
                 align-items: center;
                 padding-left: 150px;
                 padding-right: 100px;
+            }
+
+            #contact-button {
+                width: 120px;
+                height: 30px;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                background-color: #ED755A;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             .social-media {
