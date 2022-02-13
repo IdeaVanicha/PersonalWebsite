@@ -140,6 +140,7 @@ export default function Projects() {
             align-items: center;
             padding: 100px;
             padding-top: 30px;
+            width: 1200px;
         }
         .header-project {
             font-size: 48px;
@@ -350,7 +351,6 @@ export function IndividualProject(props) {
         </div>
         <style jsx>{`
             .project-container {
-                width: 100vw;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -358,12 +358,13 @@ export function IndividualProject(props) {
                 margin-bottom: 20px;
             }
             .project-box {
-                flex: 1;
                 padding: 80px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-
+                padding: 100px;
+                padding-top: 30px;
+                width: 1200px;
             }
 
             .description{

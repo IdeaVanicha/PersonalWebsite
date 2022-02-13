@@ -40,10 +40,10 @@ export default function Experience() {
             flex-direction: column;
             padding: 100px;
             padding-top: 30px;
+            width: 1200px;
         }
         .work {
             width: 400px;
-            height: 250px;
             margin-right: 50px;
             margin-top: 50px;
             display: flex;

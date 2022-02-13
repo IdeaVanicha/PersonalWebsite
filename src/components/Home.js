@@ -11,21 +11,21 @@ export default function Home() {
             <div className="socialmedia-container">
                 <div class="social-media">
                     <a href="https://www.linkedin.com/in/phasavee-idea-vanicharoenchai-b40a5b1a4/">
-                        <AiOutlineLinkedin size={40} color="#F5B2A3" />
+                        <AiOutlineLinkedin size={40} color="#ED755A" />
                     </a>
                 </div>
                 <div class="social-media">
                     <a href="https://www.facebook.com/titi.vanicha">
-                        <AiOutlineFacebook size={40} color="#F5B2A3"/>
+                        <AiOutlineFacebook size={40} color="#ED755A"/>
                     </a>
                 </div>
                 <div class="social-media">
                     <a href="https://www.instagram.com/phasavanicha/">
-                        <AiOutlineInstagram size={40} color="#F5B2A3"/>
+                        <AiOutlineInstagram size={40} color="#ED755A"/>
                     </a>
                 </div>
                 <a class="social-media" href={cv}>
-                <HiOutlineDocumentText size={35} color='#F5B2A3'/>
+                <HiOutlineDocumentText size={35} color='#ED755A'/>
                 </a>
             </div>
 
@@ -43,13 +43,13 @@ export default function Home() {
         </div>
         <style jsx>{`
             #home-container {
-                padding-top: 40px;
-                height: 90vh;
+                padding: 100px;
+                padding-top: 30px;
+                width: 1200px;
+                height: 600px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding-left: 150px;
-                padding-right: 100px;
             }
 
             #contact-button {

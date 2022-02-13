@@ -29,10 +29,22 @@ function App() {
 export default App;
 
 function Main() {
-  return <div className="App">
-      <Home/>
-      <AboutMe/>
-      <Experience />
-      <Projects />
-  </div>
+  return <>
+      <div className="App">
+          <Home/>
+          <AboutMe/>
+          <Experience />
+          <Projects />
+      </div>
+   <style jsx>{`
+
+    .App {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+  `}</style>
+  </>
 }

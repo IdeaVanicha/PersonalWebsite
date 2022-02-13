@@ -37,9 +37,9 @@ export default function AboutMe() {
             align-items: center;
             flex-direction: column;
             justify-content: center;
-            border: 1px solclassName black;
-            padding: 50px;
+            padding: 100px;
             padding-top: 80px;
+            width: 1200px;
           }
           
         .paragraph, .education {
