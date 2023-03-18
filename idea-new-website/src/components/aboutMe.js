@@ -41,6 +41,16 @@ export const AboutMe = () => {
             .aboutMe-img {
                 width: 50%;
             }
+
+            .aboutMe-img:hover {
+                transform: scale(0.95);
+                transition: 0.2s;
+            }
+
+            .aboutMe-img:active {
+                transform: scale(1));
+                transition: 0.2s;
+            }
         `}</style>
     </>
 }

@@ -2,13 +2,16 @@ import { AiFillLinkedin } from 'react-icons/ai';
 
 const SocialMediaButton = (props) => {
     return <>
-        <div className='sm-container'>
+        <a className='sm-container' href={props.value.link}>
             {
-                props.value.emoji === 'AiFillLinkedin' ? <AiFillLinkedin size={25} color='white'/> :
+                props.value.emoji === 'AiFillLinkedin' ?  <AiFillLinkedin size={25} color='white'/>:
                 <div className="emoji">{props.value.emoji}</div>
             }
-        </div>
+        </a>
         <style jsx>{`
+            a {
+                padding: 0;
+            }
             .sm-container {
                 width: 50px;
                 height: 50px;
@@ -45,15 +48,18 @@ export const Landing = () => {
     const buttons = [
         {
             label: 'email',
-            emoji: '📧'
+            emoji: '📧',
+            link: ''
         },
         {
             label: 'cv',
-            emoji: '📄'
+            emoji: '📄',
+            link: ''
         },
         {
             label: 'linkedin',
-            emoji: 'AiFillLinkedin'
+            emoji: 'AiFillLinkedin',
+            link: 'https://www.linkedin.com/in/phasavee-idea-vanicharoenchai-b40a5b1a4/'
 
         }
     ]

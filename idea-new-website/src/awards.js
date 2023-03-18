@@ -1,4 +1,14 @@
+import { useCallback } from "react";
+import confetti from "https://cdn.skypack.dev/canvas-confetti@1";
+
 export const Awards = () => {
+
+    const onClick = useCallback(() => {
+        confetti({
+          particleCount: 150,
+          spread: 60
+        });
+      }, []);
 
     const awards = [
         {
@@ -35,9 +45,10 @@ export const Awards = () => {
             {
                     awards.map(value => <div className='experience-job'>
                         <h3>{value.name}</h3>
-                        {/* <p>{value.description}</p> */}
                         </div>)
                 }
+                <button className="confetti-btn" onClick={() => onClick()}>🎉 </button>
+
             </div>
             
         </div>
@@ -46,7 +57,7 @@ export const Awards = () => {
                 display: flex;
                 flex-direction: row;
                 height: 60vh;
-                padding: 80px 0px;
+                padding: 70px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -55,6 +66,29 @@ export const Awards = () => {
             .awards-box {
                 flex: 1;
                 text-align: center;
+            }
+
+            .confetti-btn {
+                width: 60px;
+                height: 60px;
+                background: black;
+                border-radius: 50%;
+                border: none;
+                margin-top: 20px;
+                font-size: 30px;
+            }
+
+            .confetti-btn:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+                transition: 0.2s;
+            }
+
+            .confetti-btn:active {
+                cursor: pointer;
+                transform: scale(1);
+                font-size: 28px;
+                transition: 0.2s;
             }
         `}</style>
     </>

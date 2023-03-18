@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 import { Navbar } from './components/navBar';
 import { Landing } from './components/landing';
@@ -8,35 +8,29 @@ import { Projects } from './components/projects';
 import { Awards } from './awards';
 import { Banner, LetsTalk } from './components/banner';
 import { Conclusion } from './components/conclusion';
+import { useEffect } from 'react';
 
 function App() {
+
+  const [pageYOffset, setpageYOffset] = useState('');
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setpageYOffset(window.pageYOffset)
+    })
+  }, []);
+
   return (
     <div className="App">
-      <Navbar/>
-
+      <Navbar pageYOffset={pageYOffset}/>
       <Landing/>
-      <Banner/>
+      <Banner pageYOffset={pageYOffset}/>
       <AboutMe/>
       <Experience/>
       <Projects />
       <Awards/>
-      <LetsTalk/>
+      <LetsTalk pageYOffset={pageYOffset}/>
       <Conclusion/>
-
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
     </div>
   );
 }

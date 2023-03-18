@@ -12,49 +12,69 @@ export const Projects = () => {
         <div className='Projects-container'>
             <div className='Projects-box'>
                 <div className='project-box'>
-                    <div className="box-top">
+                    <div className="box-left">
                         <h3 className='project-name'>POUCH LOYALTY</h3>
                         <p className='project-date'>Jun 21 - Now</p>
-                        {/* <img src={pouch} className='project-image'/> */}
+                        <div className='skill-box'>
+                            <div className="skill-pill"> 
+                                <DiReact size={30} color="white"/>
+                            </div>
+                            <div className="skill-pill">
+                                <SiFirebase size={30} color="white"/>
+                            </div>
+                        </div>
                     </div>
-                    <div className="box-bottom">
-                        <div className="skill-pill"> 
-                            <DiReact size={30} color="white"/>
-                        </div>
-                        <div className="skill-pill">
-                            <SiFirebase size={30} color="white"/>
-                        </div>
+                    <div className="box-right">
+                        <ul>
+                            <li>React Native mobile application.</li>
+                            <li>Hihi</li>
+                            <li>Hihi</li>
+                        </ul>
                     </div>
 
                 </div>
                 <div className='project-box'>                    
-                    <div className="box-top">
+                    <div className="box-left">
                         <h3 className='project-name'>SEVERLESS AUTH</h3>
                         <p className='project-date'>Dec 20 - Feb 21</p>
                         <div className='project-image'></div>
+                        <div className='skill-box'>
+                            <div className="skill-pill"> 
+                                <DiReact size={30} color="white"/>
+                            </div>
+                            <div className="skill-pill">
+                                <FaAws size={30} color="white"/>
+                            </div>
+                        </div>
                     </div>
-                    <div className="box-bottom">
-                        <div className="skill-pill">
-                            <DiReact size={30} color="white"/>
-                        </div>
-                        <div className="skill-pill">
-                            <FaAws size={30} color="white"/>
-                        </div>
+                    <div className="box-right">
+                        <ul>
+                            <li>React Native mobile application.</li>
+                            <li>Hihi</li>
+                            <li>Hihi</li>
+                        </ul>
                     </div>
                 </div>
                 <div className='project-box'>                    
-                    <div className="box-top">
+                    <div className="box-left">
                         <h3 className='project-name'>BAMBOO</h3>
                         <p className='project-date'>Hackiethon 2021</p>
                         <div className='project-image'></div>
+                        <div className='skill-box'>
+                            <div className="skill-pill"> 
+                                <DiReact size={30} color="white"/>
+                            </div>
+                            <div className="skill-pill">
+                                <SiAuth0 size={30} color="white"/>
+                            </div>
+                        </div>
                     </div>
-                    <div className="box-bottom">
-                        <div className="skill-pill">
-                            <DiReact size={30} color="white"/>
-                        </div>
-                        <div className="skill-pill">
-                            <SiAuth0 size={30} color="white"/>
-                        </div>
+                    <div className="box-right">
+                        <ul>
+                            <li>React Native mobile application.</li>
+                            <li>Hihi</li>
+                            <li>Hihi</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -72,31 +92,35 @@ export const Projects = () => {
             .Projects-box {
                 flex: 1;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 margin: 40px;
 
             }
 
             .project-box {
-                border: 1px solid white;
                 flex: 1;
                 margin: 20px;
                 height: 400px;
                 display: flex;
-                flex-direction: column;
             }
 
-            .box-top {
-                flex: 4;
+            .box-left {
+                flex: 3;
                 display: flex;
                 flex-direction: column;
+                text-align: left;
             }
 
-            .box-bottom {
+            .box-right {
+                flex: 4;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 padding: 10px 0px;
+                color: white;
+                text-align: left;
+                justify-content: flex-start;
+                font-size: 20px;
             }
 
             .skill-pill {
@@ -113,9 +137,15 @@ export const Projects = () => {
                 transition: 0.5s;
             }
 
-            .project-name, .project-date {
+            .project-name {
                 color: white;
-                margin: 5px;
+                font-size: 48px;
+                margin: 0;
+            }
+
+            .project-date {
+                color: white;
+                font-size: 20px;
             }
 
             .project-image {
@@ -123,6 +153,10 @@ export const Projects = () => {
                 flex: 1;
                 margin: 5px 0px;
                 object-fit: contain;
+            }
+
+            .skill-box {
+                display: flex;
             }
         `}</style>
     </>
