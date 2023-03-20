@@ -26,9 +26,10 @@ export const Projects = () => {
                     </div>
                     <div className="box-right">
                         <ul>
-                            <li>React Native mobile application.</li>
-                            <li>Hihi</li>
-                            <li>Hihi</li>
+                            <li>A platform for businesses to store their loyalty program.</li>
+                            <li>Aims to give local businesses the opportunity to digitalise customer loyalty.</li>
+                            <li>450+ users on the platform + 3 businesses using the app.</li>
+                            <li>Awarded Macquaire Engineering Award, Google Generation Scholarship</li>
                         </ul>
                     </div>
 
@@ -37,7 +38,6 @@ export const Projects = () => {
                     <div className="box-left">
                         <h3 className='project-name'>SEVERLESS AUTH</h3>
                         <p className='project-date'>Dec 20 - Feb 21</p>
-                        <div className='project-image'></div>
                         <div className='skill-box'>
                             <div className="skill-pill"> 
                                 <DiReact size={30} color="white"/>
@@ -49,9 +49,9 @@ export const Projects = () => {
                     </div>
                     <div className="box-right">
                         <ul>
-                            <li>React Native mobile application.</li>
-                            <li>Hihi</li>
-                            <li>Hihi</li>
+                            <li>Implemented user authentication flow as part of an internship.</li>
+                            <li>Backend created using AWS Cognito.</li>
+                            <li>Designed the UX/UI for both light and dark mode.</li>
                         </ul>
                     </div>
                 </div>
@@ -59,7 +59,6 @@ export const Projects = () => {
                     <div className="box-left">
                         <h3 className='project-name'>BAMBOO</h3>
                         <p className='project-date'>Hackiethon 2021</p>
-                        <div className='project-image'></div>
                         <div className='skill-box'>
                             <div className="skill-pill"> 
                                 <DiReact size={30} color="white"/>
@@ -71,9 +70,9 @@ export const Projects = () => {
                     </div>
                     <div className="box-right">
                         <ul>
-                            <li>React Native mobile application.</li>
-                            <li>Hihi</li>
-                            <li>Hihi</li>
+                            <li>A productivity tracker that allows users to earn points upon completing tasks, add friends, and send challenges.</li>
+                            <li>Went into Hackiethon with limited experience.</li>
+                            <li>Learned how to collaborate with team using Git and React.</li>
                         </ul>
                     </div>
                 </div>
